@@ -1,0 +1,73 @@
+.player-setup {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #747474; /* Dark background */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    margin: auto;
+    animation: slideIn 0.5s ease forwards; /* Animation for the setup */
+    transform: translateY(-20px); /* Start above the original position */
+    opacity: 0; /* Start invisible */
+  }
+  
+  .player-setup h2 {
+    margin-bottom: 20px;
+    color: #FF652F !important; /* Accent color for the heading */
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .player-setup form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .player-setup label {
+    margin-bottom: 5px;
+    color: #fff; /* Accent color for labels */
+    text-align: left; /* Align label to the left */
+  }
+  
+  .player-setup input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    width: 90%;
+    border: 1px solid #ccc; /* Light border for inputs */
+    background-color: #fff; /* White background for inputs */
+    color: #272727; /* Dark text color */
+  }
+  
+  /* Removed input focus effect */
+  
+  .player-setup button {
+    padding: 10px;
+    background-color: #FF652F; /* Accent color for button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Added transform animation */
+    font-size: 16px; /* Increase button font size */
+  }
+  
+  .player-setup button:hover {
+    background-color: #e65c1b; /* Slightly darker on hover */
+    transform: scale(1.05); /* Scale up button on hover */
+  }
+  
+  /* Keyframes for slide-in animation */
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

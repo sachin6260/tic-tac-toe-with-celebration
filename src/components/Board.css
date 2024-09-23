@@ -1,0 +1,106 @@
+body {
+    background-color: #272727;
+    color: #747474;
+    font-family: Arial, sans-serif;
+  }
+  
+  .game-container {
+     position: relative;
+    padding: 20px;
+  }
+  .game-container h1{
+    text-align: center;
+    color: #fff;
+  }
+  
+  .player-info {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .player-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+  }
+  .status {
+    text-align: center;
+  }
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+    justify-content: center;
+    margin: 20px auto;
+  }
+  
+  .square {
+    width: 120px;
+    height: 120px;
+    font-size: 2em;
+    cursor: pointer;
+    background-color: #FF652F; /* Accent color */
+    border: 2px solid #747474; /* Medium gray for borders */
+    transition: background-color 0.3s; /* Add transition for hover effect */
+  }
+  
+  .square:hover {
+    background-color: #e64a22; /* Slightly darker on hover */
+  }
+  
+  .celebration-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: #FFFFFF; /* White for contrast */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    animation: fadeIn 0.5s;
+  }
+  
+  .winner-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px 0;
+  }
+  button {
+    text-align: center;
+    padding: 10px;
+    background-color: #FF652F; /* Accent color for button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Added transform animation */
+    font-size: 16px; /* Increase button font size */
+  }
+  
+  button:hover {
+    background-color: #e65c1b; /* Slightly darker on hover */
+    transform: scale(1.05); /* Scale up button on hover */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
